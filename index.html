@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>element check-box test</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+  </head>
+  <body>
     直接使用 element el-checkbox-group js 报错。
-  <div id="app">
-    <el-checkbox-group>
+    <div id="app">
+      <el-checkbox-group>
         <el-checkbox label="复选框 A"></el-checkbox>
         <el-checkbox label="复选框 B"></el-checkbox>
         <el-checkbox label="复选框 C"></el-checkbox>
         <el-checkbox label="禁用" disabled></el-checkbox>
         <el-checkbox label="选中且禁用" disabled></el-checkbox>
       </el-checkbox-group>
-  </div>
-</body>
+    </div>
+  </body>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
   <script>
     new Vue({
       el: '#app',
       data: function() {
-        return { visible: false }
+        return {}
       }
     })
   </script>
